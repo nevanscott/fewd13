@@ -135,7 +135,7 @@ nav.social .rss a:hover {
 	width: 75%;
 	margin: 0;
 	padding: 0;
-	font-size: large;
+	font-size: 1.2em;
 }
 .blurb .action {
 	float: right;
@@ -153,6 +153,7 @@ nav.social .rss a:hover {
 	box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 2px rgba(0,0,0,.5);
 	text-shadow: 0 -1px 0 rgba(0,0,0,.4);
 	text-decoration: none;
+	margin-left: 20px;
 }
 .blurb .action a small {
 	display: block;
@@ -164,12 +165,12 @@ nav.social .rss a:hover {
 	font-size: small;
 	margin: 20px 0;
 }
-.touts .tout {
+.tout {
 	float: left;
 	width: 30%;
 	margin-right: 5%;
 }
-.touts .tout-last {
+.tout-last {
 	margin-right: 0;
 }
 .tout h2 {
@@ -255,4 +256,122 @@ footer {
 }
 .group {
     *zoom: 1;
+}
+
+
+@media screen and (max-width: 55em) {
+	nav.main {
+		font-size: 14px;
+	}
+	nav.main ul li a {
+		line-height: 40px;
+	}
+	#page {
+		background: none;
+	}
+	.blurb p {
+		width: 70%;
+	}
+	.blurb .action {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 46em) {
+	.blurb p {
+		width: 60%;
+		font-size: 1em;
+	}
+	.blurb .action {
+		width: 40%;
+	}
+	.tout {
+		float: none;
+		width: auto;
+		margin: 0;
+		clear: both;
+		border-bottom: 1px solid #CCC;
+	}
+	.tout-last {
+		border-bottom: none;
+	}
+	.tout img {
+		float: right;
+		margin-top: -3.5em;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	nav.social {
+		margin-top: 36px;
+	}
+	nav.social ul li {
+		margin-left: 12px;
+	}
+	nav.social ul li a {
+		font-size: 2em;
+	}
+	.blurb p {
+		width: 50%;
+	}
+	.blurb .action {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 32em) {
+	h1.logo {
+		float: none;
+		text-align: center;
+		margin: 18px 0 0;
+	}
+	nav.social {
+		float: none;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	nav.social ul li {
+		float: none;
+		display: inline-block;
+	}
+	nav.social ul li a {
+		display: inline-block;
+	}
+	.blurb p {
+		float: none;
+		width: auto;
+	}
+	.blurb .action {
+		float: none;
+		width: auto;
+	}
+	.blurb .action a {
+		margin: 20px 0 0;
+	}
+	.tout img {
+		float: none;
+		margin: 0;
+	}
+	footer {
+		padding-top: 20px;
+	}
+	.widget {
+		float: none;
+		width: auto;
+		margin: 0 0 20px;
+	}
+	.endmatter .copyright {
+		float: none;
+	}
+	.endmatter .credits {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	nav.main ul li a {
+		padding: 3px 10px;
+	}
 }
