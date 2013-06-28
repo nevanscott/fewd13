@@ -1,0 +1,258 @@
+/* General Styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	line-height: 1.4;
+	background: url(../images/bg_body.jpg);
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: #1FA2E1;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	width: 960px;
+	padding: 0 20px;
+	margin: auto;
+}
+
+/* Main Nav */
+nav.main {
+	background: #333;
+	color: white;
+}
+nav.main ul {
+	margin: 0;
+	padding: 0;
+}
+nav.main ul li {
+	list-style: none;
+	float: left;
+}
+nav.main ul li a {
+	display: block;
+	line-height: 79px;
+	color: #CCC;
+	text-decoration: none;
+	padding: 3px 15px;
+	-webkit-transition: background 250ms, color 250ms;
+	-moz-transition: background 250ms, color 250ms;
+	transition: background 250ms, color 250ms;
+}
+nav.main ul li.active a, nav.main ul li a:hover {
+	color: #96DDFC;
+	padding-top: 0;
+	border-top: 3px solid #1FA2E1;
+	background: rgba(255,255,255,.1);
+}
+nav.main ul li.active a {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	background: rgba(255,255,255,.05);
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.5);
+	color: white;
+}
+
+/* Page */
+#page {
+	background: url(../images/bg_gradient.png) repeat-x;
+}
+
+/* Logo */
+h1.logo {
+	float: left;
+	margin-top: 30px;
+}
+
+/* Social Nav */
+nav.social {
+	float: right;
+	margin-top: 26px;
+}
+nav.social ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav.social ul li {
+	float: left;
+	margin-left: 16px;
+}
+nav.social ul li a {
+	display: block;
+	font-size: 3em;
+	text-decoration: none;
+	color: #999;
+	text-shadow: 0 1px 0 rgba(0,0,0,.25);
+	-webkit-transition: color 500ms;
+	-moz-transition: color 500ms;
+	transition: color 500ms;
+}
+nav.social ul li a span {
+	display: none;
+}
+nav.social .linkedin a:hover {
+	color: #069;
+}
+nav.social .twitter a:hover {
+	color: #0084B4;
+}
+nav.social .facebook a:hover {
+	color: #3b5998;
+}
+nav.social .rss a:hover {
+	color: #FA9B39;
+}
+
+/* Banner */
+.banner {
+	box-shadow: 0 25px 20px -20px black;
+	margin-bottom: 40px;
+}
+.banner img {
+	display: block;
+}
+
+/* Blurb */
+.blurb {
+	background: #DDD;
+	border: 1px solid #BBB;
+	padding: 20px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.25);
+}
+.blurb p {
+	float: left;
+	width: 75%;
+	margin: 0;
+	padding: 0;
+	font-size: large;
+}
+.blurb .action {
+	float: right;
+	width: 25%;
+}
+.blurb .action a {
+	display: block;
+	text-align: center;
+	background: #1FA2E1;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 6px;
+	font-weight: bold;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 2px rgba(0,0,0,.5);
+	text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+	text-decoration: none;
+}
+.blurb .action a small {
+	display: block;
+	font-size: .8em;
+}
+
+/* Touts */
+.touts {
+	font-size: small;
+	margin: 20px 0;
+}
+.touts .tout {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+.touts .tout-last {
+	margin-right: 0;
+}
+.tout h2 {
+	font-size: x-large;
+	font-weight: normal;
+}
+.tout img {
+	display: block;
+	box-shadow: 0 2px 8px -4px black;
+}
+.tout a.more:after {
+	content: ' »';
+}
+
+/* Footer */
+footer {
+	background: black;
+	color: white;
+	padding: 55px 0 20px;
+	font-size: small;
+	color: #444;
+}
+
+/* Footer Widgets */
+.widgets {
+}
+.widget {
+	float: left;
+	width: 23%;
+}
+.main-widget {
+	width: 48%;
+	margin: 0 3%;
+}
+.widget h3 {
+	color: #BBB;
+	font-size: large;
+	font-weight: normal;
+	border-bottom: 1px solid #333;
+	margin: 0;
+	padding: 0 0 10px;
+}
+.widget ul {
+	margin: 0;
+	padding: 0;
+}
+.widget ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget ul li a {
+	display: block;
+	color: #666;
+	padding: 7px 0;
+	border-bottom: 1px solid #333;
+}
+.widget ul li a:hover {
+	color: #999;
+	text-decoration: none;
+}
+
+/* Footer Endmatter */
+.endmatter {
+	margin: 30px 0 0;
+}
+.endmatter .copyright {
+	float: left;
+}
+.endmatter .credits {
+	float: right;
+}
+
+
+/* Clearfix - see http://nicolasgallagher.com/micro-clearfix-hack/ */
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    *zoom: 1;
+}
